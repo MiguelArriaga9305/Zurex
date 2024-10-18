@@ -22,7 +22,39 @@ namespace Zurex.Controllers
         { 
             return View();
         }
-        
+
+        public IActionResult Contact()
+        {
+            return View();
+        }
+
+        public IActionResult PropertyList()
+        {
+            return View();
+        }
+
+        public IActionResult PropertyAgent()
+        {
+            return View();
+        }
+
+        public IActionResult PropertyType()
+        {
+            return View();
+        }
+
+        public IActionResult Testimonial()
+        {
+            return View();
+        }
+
+        public IActionResult Error404()
+        {
+            return View();
+        }
+
+
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

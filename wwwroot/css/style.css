@@ -1,9 +1,10 @@
 /********** Template CSS **********/
 :root {
-    --primary: #00B98E;
-    --secondary: #FF6922;
-    --light: #EFFDF5;
-    --dark: #0E2E50;
+    --primary-blue: #002D72;
+    --secondary-blue: #4A90E2;
+    --white: #FFFFFF;
+    --red-accent: #E63946;
+    --dark-gray: #4F4F4F;
 }
 
 .back-to-top {
@@ -37,7 +38,20 @@
 
 .btn.btn-primary,
 .btn.btn-secondary {
-    color: #FFFFFF;
+    color: var(--white);
+}
+
+.btn-primary {
+    background-color: var(--primary-blue);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-blue); 
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    background-color: var(--red-accent);
 }
 
 .btn-square {
@@ -84,6 +98,7 @@
 
 .navbar {
     box-shadow: 0 0 30px rgba(0, 0, 0, .08);
+    background-color: var(--primary-blue);
 }
 
 .navbar .dropdown-toggle::after {
@@ -103,7 +118,7 @@
 .navbar-light .navbar-nav .nav-link {
     margin-right: 30px;
     padding: 25px 0;
-    color: #FFFFFF;
+    color: var(--white);
     font-size: 15px;
     text-transform: uppercase;
     outline: none;
@@ -111,7 +126,7 @@
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-    color: var(--primary);
+    color: var(--red-accent);
 }
 
 @media (max-width: 991.98px) {
@@ -126,7 +141,7 @@
     }
 
     .navbar-light .navbar-nav {
-        border-top: 1px solid #EEEEEE;
+        border-top: 1px solid var(--dark-gray);
     }
 }
 
@@ -135,7 +150,7 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: var(--dark);
+    color: var(--dark-gray);
     font-weight: 500;
 }
 
@@ -185,8 +200,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FFFFFF;
-    background: var(--primary);
+    color: var(--white);
+    background: var(--primary-blue);
     border-radius: 40px;
     font-size: 20px;
     transition: .5s;
@@ -194,7 +209,7 @@
 
 .header-carousel .owl-nav .owl-prev:hover,
 .header-carousel .owl-nav .owl-next:hover {
-    background: var(--dark);
+    background: var(--dark-gray);
 }
 
 @media (max-width: 768px) {
@@ -214,9 +229,9 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: #FFFFFF !important;
+    background: var(--white) !important;
     border-radius: 50px;
-    border: 1px dashed var(--primary) !important;
+    border: 1px dashed var(--primary-blue) !important;
 }
 
 
@@ -233,7 +248,7 @@
     left: -50%;
     width: 100%;
     height: 100%;
-    background: var(--primary);
+    background: var(--primary-blue);
     transform: skew(20deg);
     z-index: 1;
 }
@@ -241,13 +256,13 @@
 
 /*** Category ***/
 .cat-item div {
-    background: #FFFFFF;
+    background: var(--white);
     border: 1px dashed rgba(0, 185, 142, .3);
     transition: .5s;
 }
 
 .cat-item:hover div {
-    background: var(--primary);
+    background: var(--primary-blue);
     border-color: transparent;
 }
 
@@ -256,18 +271,18 @@
 }
 
 .cat-item:hover div * {
-    color: #FFFFFF !important;
+    color: var(--white) !important;
 }
 
 
 /*** Property List ***/
 .nav-pills .nav-item .btn {
-    color: var(--dark);
+    color: var(--dark-gray);
 }
 
 .nav-pills .nav-item .btn:hover,
 .nav-pills .nav-item .btn.active {
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 .property-item {
@@ -298,22 +313,22 @@
 }
 
 .team-item .btn {
-    color: var(--primary);
-    background: #FFFFFF;
+    color: var(--primary-blue);
+    background: var(--white);
     box-shadow: 0 0 30px rgba(0, 0, 0, .15);
 }
 
 .team-item .btn:hover {
-    color: #FFFFFF;
-    background: var(--primary);
+    color: var(--white);
+    background: var(--primary-blue);
 }
 
 .team-item:hover {
-    border-color: var(--secondary) !important;
+    border-color: var(--secondary-blue) !important;
 }
 
 .team-item:hover .bg-primary {
-    background: var(--secondary) !important;
+    background: var(--secondary-blue) !important;
 }
 
 .team-item:hover .bg-primary i {
@@ -357,8 +372,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FFFFFF;
-    background: var(--primary);
+    color: var(--white);
+    background: var(--primary-blue);
     border-radius: 40px;
     font-size: 20px;
     transition: .5s;
@@ -366,7 +381,7 @@
 
 .testimonial-carousel .owl-nav .owl-prev:hover,
 .testimonial-carousel .owl-nav .owl-next:hover {
-    background: var(--dark);
+    background: var(--dark-gray);
 }
 
 
@@ -378,15 +393,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--light);
+    color: var(--white);
     border: 1px solid rgba(255,255,255,0.5);
     border-radius: 35px;
     transition: .3s;
 }
 
 .footer .btn.btn-social:hover {
-    color: var(--primary);
-    border-color: var(--light);
+    color: var(--primary-blue);
+    border-color: var(--white);
 }
 
 .footer .btn.btn-link {
@@ -421,10 +436,11 @@
     padding: 25px 0;
     font-size: 15px;
     border-top: 1px solid rgba(256, 256, 256, .1);
+    color: var(--white);
 }
 
 .footer .copyright a {
-    color: var(--light);
+    color: var(--white);
 }
 
 .footer .footer-menu a {
@@ -437,4 +453,33 @@
     margin-right: 0;
     padding-right: 0;
     border-right: none;
+}
+
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+    .whatsapp-float i {
+        font-size: 30px; 
+    }
+
+@media (max-width: 600px) {
+    .whatsapp-float {
+        width: 50px; /* Ajusta el tamaño del botón para pantallas más pequeñas */
+        height: 50px;
+        bottom: 20px; /* Cambia la posición para mejor visibilidad en móviles */
+        right: 20px;
+    }
 }
