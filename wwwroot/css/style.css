@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary-blue: #002D72;
+    --primary-blue: #0a2c61;
     --secondary-blue: #4A90E2;
     --white: #FFFFFF;
     --red-accent: #E63946;
@@ -36,22 +36,22 @@
     transition: .5s;
 }
 
-.btn.btn-primary,
-.btn.btn-secondary {
-    color: var(--white);
-}
+    .btn.btn-primary,
+    .btn.btn-secondary {
+        color: #fff;
+    }
 
 .btn-primary {
-    background-color: var(--primary-blue);
+    background-color: #0a2c61;
 }
 
 .btn-secondary {
-    background-color: var(--secondary-blue); 
+    background-color: var(--white); 
 }
 
 .btn-primary:hover,
 .btn-secondary:hover {
-    background-color: var(--red-accent);
+    background-color:var(--white);
 }
 
 .btn-square {
@@ -84,7 +84,6 @@
 /*** Navbar ***/
 .nav-bar {
     position: relative;
-    margin-top: 45px;
     padding: 0 3rem;
     transition: .5s;
     z-index: 9999;
@@ -150,7 +149,7 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: var(--dark-gray);
+    color: #000;
     font-weight: 500;
 }
 
@@ -179,7 +178,7 @@
 /*** Header ***/
 @media (min-width: 992px) {
     .header {
-        margin-top: -120px;
+        margin-top: -90px;
     }
 }
 
@@ -248,7 +247,7 @@
     left: -50%;
     width: 100%;
     height: 100%;
-    background: var(--primary-blue);
+    background: #73151e;
     transform: skew(20deg);
     z-index: 1;
 }
@@ -256,7 +255,7 @@
 
 /*** Category ***/
 .cat-item div {
-    background: var(--white);
+    background: #f3f5f7;
     border: 1px dashed rgba(0, 185, 142, .3);
     transition: .5s;
 }
@@ -277,7 +276,7 @@
 
 /*** Property List ***/
 .nav-pills .nav-item .btn {
-    color: var(--dark-gray);
+    color: var(--white);
 }
 
 .nav-pills .nav-item .btn:hover,
@@ -312,11 +311,11 @@
     transition: .5s;
 }
 
-.team-item .btn {
-    color: var(--primary-blue);
-    background: var(--white);
-    box-shadow: 0 0 30px rgba(0, 0, 0, .15);
-}
+    .team-item .btn {
+        color: #73151e;
+        background: var(--white);
+        box-shadow: 0 0 30px rgba(0, 0, 0, .15);
+    }
 
 .team-item .btn:hover {
     color: var(--white);

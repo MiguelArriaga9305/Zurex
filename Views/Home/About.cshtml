@@ -49,35 +49,35 @@
             <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
                 <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
                     <div class="icon p-2 me-2">
-                        <img class="img-fluid" src="../img/icon-deal.png" alt="Icon" style="width: 30px; height: 30px;">
+                        <img class="img-fluid" src="../img/iconos/logo de zurex.jpg" alt="Icon" style="width: 30px; height: 30px;">
                     </div>
-                    <h1 class="m-0 text-primary">Makaan</h1>
+                    <h1 class="m-0 text-primary">Zurex</h1>
                 </a>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto">
-                        <a class="nav-item nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        <a asp-controller="Home" asp-action="About" class="nav-item nav-link active">About</a>
+                        <a class="nav-item nav-link" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
+                        <a asp-controller="Home" asp-action="Nosotros" class="nav-item nav-link active">Nosotros</a>
                             <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Property</a>
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Propiedades</a>
                                     <div class="dropdown-menu rounded-0 m-0">
-                                        <a asp-controller="Home" asp-action="PropertyAgent" class="dropdown-item">Property Agent</a>
-                                        <a asp-controller="Home" asp-action="PropertyList" class="dropdown-item">Property List</a>
-                                        <a asp-controller="Home" asp-action="PropertyType" class="dropdown-item">Property Type</a>
+                                <a asp-controller="Home" asp-action="PropertyAgent" class="dropdown-item">Agentes de propiedades</a>
+                                <a asp-controller="Home" asp-action="PropertyList" class="dropdown-item">Lista de propiedades</a>
+                                <a asp-controller="Home" asp-action="PropertyType" class="dropdown-item">Tipo de Propiedad</a>
                                     </div>
                             </div>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Paginas</a>
                                 <div class="dropdown-menu rounded-0 m-0">
-                                    <a asp-controller="Home" asp-action="Testimonial" class="dropdown-item">Testimonial</a>
-                                    <a asp-controller="Home" asp-action="Error404" class="dropdown-item">404 Error</a>
+                                <a asp-controller="Home" asp-action="Testimonial" class="dropdown-item">Testimonios</a>
+                                <a asp-controller="Home" asp-action="Error404" class="dropdown-item">Error 404</a>
                                 </div>
                         </div>
-                        <a asp-controller="Home" asp-action="Contact" class="nav-item nav-link">Contact</a>
+                        <a asp-controller="Home" asp-action="Contact" class="nav-item nav-link">Contacto</a>
                     </div>
-                    <a href="" class="btn btn-primary px-3 d-none d-lg-flex">Add Property</a>
+                    <a href="" class="btn btn-primary px-3 d-none d-lg-flex">Agregar Propiedad</a>
                 </div>
             </nav>
         </div>
@@ -86,14 +86,8 @@
         <div class="container-fluid header bg-white p-0">
             <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
                 <div class="col-md-6 p-5 mt-lg-5">
-                    <h1 class="display-5 animated fadeIn mb-4">About Us</h1>
-                    <nav aria-label="breadcrumb animated fadeIn">
-                        <ol class="breadcrumb text-uppercase">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                            <li class="breadcrumb-item text-body active" aria-current="page">About</li>
-                        </ol>
-                    </nav>
+                    <h1 class="display-5 animated fadeIn mb-4">Nosotros</h1>
+                    <nav aria-label="breadcrumb animated fadeIn"</nav>
                 </div>
                 <div class="col-md-6 animated fadeIn">
                     <img class="img-fluid" src="../img/header.jpg" alt="">
@@ -108,28 +102,28 @@
                     <div class="col-md-10">
                         <div class="row g-2">
                             <div class="col-md-4">
-                                <input type="text" class="form-control border-0 py-3" placeholder="Search Keyword">
+                                <input type="text" class="form-control border-0 py-3" placeholder="Palabra Clave">
                             </div>
                             <div class="col-md-4">
                                 <select class="form-select border-0 py-3">
-                                    <option selected>Property Type</option>
-                                    <option value="1">Property Type 1</option>
-                                    <option value="2">Property Type 2</option>
-                                    <option value="3">Property Type 3</option>
+                                    <option selected>Tipo de Propiedad</option>
+                                    <option value="1">Departamentos</option>
+                                    <option value="2">Casas</option>
+                                    <option value="3">Oficinas</option>
                                 </select>
                             </div>
                             <div class="col-md-4">
                                 <select class="form-select border-0 py-3">
-                                    <option selected>Location</option>
-                                    <option value="1">Location 1</option>
-                                    <option value="2">Location 2</option>
-                                    <option value="3">Location 3</option>
+                                    <option selected>Locación</option>
+                                    <option value="1">Locación 1</option>
+                                    <option value="2">Locación 2</option>
+                                    <option value="3">Locación 3</option>
                                 </select>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-2">
-                        <button class="btn btn-dark border-0 w-100 py-3">Search</button>
+                        <button class="btn btn-dark border-0 w-100 py-3">Buscar</button>
                     </div>
                 </div>
             </div>
@@ -145,18 +139,21 @@
                         </div>
                     </div>
                     <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                        <h1 class="mb-4">#1 Place To Find The Perfect Property</h1>
-                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                        <p><i class="fa fa-check text-primary me-3"></i>Tempor erat elitr rebum at clita</p>
-                        <p><i class="fa fa-check text-primary me-3"></i>Aliqu diam amet diam et eos</p>
-                        <p><i class="fa fa-check text-primary me-3"></i>Clita duo justo magna dolore erat amet</p>
-                        <a class="btn btn-primary py-3 px-5 mt-3" href="">Read More</a>
+                        <h1 class="mb-4">#1 Lugar para Encontrar la Propiedad Perfecta</h1>
+                        <p class="mb-4">
+                            En Zurex, somos una empresa dedicada a ayudarte a encontrar el hogar de tus sueños o la inversión ideal. Contamos con un equipo de profesionales comprometidos en ofrecer un servicio de calidad y atención personalizada, guiándote en cada paso del proceso de compra, venta o renta de propiedades.
+                            Nuestro enfoque está en comprender tus necesidades y asegurarnos de que encuentres la propiedad que se ajuste a tus expectativas y estilo de vida. Con un amplio portafolio de opciones y un conocimiento profundo del mercado inmobiliario, nos esforzamos por hacer de esta experiencia algo único y satisfactorio.
+                        </p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Atención personalizada y profesional</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Amplia gama de propiedades disponibles</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Asesoría en cada paso del proceso de compra o renta</p>
+                        <a class="btn btn-primary py-3 px-5 mt-3" href="">Leer más</a>
                     </div>
                 </div>
             </div>
         </div>
         <!-- About End -->
-        <!-- Call to Action Start -->
+        <!-- Call to Agents Start -->
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="bg-light rounded p-3">
@@ -167,30 +164,33 @@
                             </div>
                             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                                 <div class="mb-4">
-                                    <h1 class="mb-3">Contact With Our Certified Agent</h1>
-                                    <p>Eirmod sed ipsum dolor sit rebum magna erat. Tempor lorem kasd vero ipsum sit sit diam justo sed vero dolor duo.</p>
+                                    <h1 class="mb-3">Contacta Con Nuestros Agentes Certificados</h1>
+                                    <p>
+                                        En Zurex nos enorgullece ofrecer un servicio transparente y de calidad. Para garantizar la confianza en cada una de nuestras transacciones, contamos con un grupo de clientes certificados que han experimentado nuestros servicios de manera satisfactoria.
+                                        Estos clientes no solo han adquirido propiedades a través de nuestra agencia, sino que también han validado nuestra profesionalidad, compromiso y atención al detalle.
+                                    </p>
                                 </div>
-                                <a href="" class="btn btn-primary py-3 px-4 me-2"><i class="fa fa-phone-alt me-2"></i>Make A Call</a>
-                                <a href="" class="btn btn-dark py-3 px-4"><i class="fa fa-calendar-alt me-2"></i>Get Appoinment</a>
+                                <a href="" class="btn btn-primary py-3 px-4 me-2"><i class="fa fa-phone-alt me-2"></i>Contactanos</a>
+                                <a href="" class="btn btn-dark py-3 px-4"><i class="fa fa-calendar-alt me-2"></i>Agenda Una Cita</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Call to Action End -->
-        <!-- Team Start -->
+        <!-- Call to Agents End -->
+        <!-- Team Agents Start -->
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3">Property Agents</h1>
-                    <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+                    <h1 class="mb-3">Nuestros Agentes</h1>
+                    <p>Confía en nuestros agentes certificados para guiarte en cada paso de tu proceso inmobiliario. Con experiencia y dedicación, te ofrecen asesoría personalizada para ayudarte a encontrar la propiedad perfecta o a vender con éxito. En Zurex, nuestro compromiso es tu tranquilidad.</p>
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="team-item rounded overflow-hidden">
                             <div class="position-relative">
-                                <img class="img-fluid" src="../img/team-1.jpg" alt="">
+                                <img class="img-fluid" src="../img/team/team-1.jpg" alt="">
                                 <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
                                     <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                                     <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
@@ -206,7 +206,7 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="team-item rounded overflow-hidden">
                             <div class="position-relative">
-                                <img class="img-fluid" src="../img/team-2.jpg" alt="">
+                                <img class="img-fluid" src="../img/team/team-2.jpg" alt="">
                                 <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
                                     <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                                     <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
@@ -222,7 +222,7 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="team-item rounded overflow-hidden">
                             <div class="position-relative">
-                                <img class="img-fluid" src="../img/team-3.jpg" alt="">
+                                <img class="img-fluid" src="../img/team/team-3.jpg" alt="">
                                 <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
                                     <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                                     <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
@@ -238,7 +238,7 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                         <div class="team-item rounded overflow-hidden">
                             <div class="position-relative">
-                                <img class="img-fluid" src="../img/team-4.jpg" alt="">
+                                <img class="img-fluid" src="../img/team/team-4.jpg" alt="">
                                 <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
                                     <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                                     <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
@@ -273,32 +273,32 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h5 class="text-white mb-4">Quick Links</h5>
-                        <a class="btn btn-link text-white-50" href="">About Us</a>
-                        <a class="btn btn-link text-white-50" href="">Contact Us</a>
-                        <a class="btn btn-link text-white-50" href="">Our Services</a>
-                        <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
-                        <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
+                        <a class="btn btn-link text-white-50" href="">Nosotros</a>
+                        <a class="btn btn-link text-white-50" href="">Contáctanos</a>
+                        <a class="btn btn-link text-white-50" href="">Propiedades</a>
+                        <a class="btn btn-link text-white-50" href="">Privacidad y Políticas</a>
+                        <a class="btn btn-link text-white-50" href="">Términos y Condiciones</a>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h5 class="text-white mb-4">Photo Gallery</h5>
                         <div class="row g-2 pt-2">
                             <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="../img/property-1.jpg" alt="">
+                                <img class="img-fluid rounded bg-light p-1" src="../img/casas/casa-12.jpg" alt="">
                             </div>
                             <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="../img/property-2.jpg" alt="">
+                                <img class="img-fluid rounded bg-light p-1" src="../img/casas/casa-8.jpg" alt="">
                             </div>
                             <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="../img/property-3.jpg" alt="">
+                                <img class="img-fluid rounded bg-light p-1" src="../img/casas/casa-9.jpg" alt="">
                             </div>
                             <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="../img/property-4.jpg" alt="">
+                                <img class="img-fluid rounded bg-light p-1" src="../img/casas/casa-2.jpg" alt="">
                             </div>
                             <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="../img/property-5.jpg" alt="">
+                                <img class="img-fluid rounded bg-light p-1" src="../img/casas/casa-10.jpg" alt="">
                             </div>
                             <div class="col-4">
-                                <img class="img-fluid rounded bg-light p-1" src="../img/property-6.jpg" alt="">
+                                <img class="img-fluid rounded bg-light p-1" src="../img/casas/casa-3.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -306,8 +306,8 @@
                         <h5 class="text-white mb-4">Newsletter</h5>
                         <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
                         <div class="position-relative mx-auto" style="max-width: 400px;">
-                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="e-mail">
+                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Ingresa Aqui</button>
                         </div>
                     </div>
                 </div>
