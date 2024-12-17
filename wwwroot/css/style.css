@@ -123,10 +123,10 @@
     outline: none;
 }
 
-.navbar-light .navbar-nav .nav-link:hover,
-.navbar-light .navbar-nav .nav-link.active {
-    color: var(--red-accent);
-}
+    .navbar-light .navbar-nav .nav-link:hover,
+    .navbar-light .navbar-nav .nav-link.active {
+        color: rgba(232, 230, 227, 0.9);
+    }
 
 @media (max-width: 991.98px) {
     .nav-bar {

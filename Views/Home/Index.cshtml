@@ -63,6 +63,8 @@
                     <div class="navbar-nav ms-auto">
                         <a asp-controller="Home" asp-action="Index" class="nav-item nav-link active">Inicio</a>
                         <a asp-controller="Home" asp-action="About" class="nav-item nav-link">Nosotros</a>
+                        <a asp-controller="Home" asp-action="Testimonial" class="nav-item nav-link">Testimonios</a>
+                        <a asp-controller="Home" asp-action="Contact" class="nav-item nav-link">Contacto</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" property="nav-item nav-link active" data-bs-toggle="dropdown">Propiedades</a>
                             <div class="dropdown-menu rounded-0 m-0">
@@ -71,19 +73,12 @@
                                 <a asp-controller="Home" asp-action="PropertyType" class="dropdown-item">Tipo de Propiedad</a>
                             </div>
                         </div>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" property="nav-item nav-link active" data-bs-toggle="dropdown">Paginas</a>
-                            <div class="dropdown-menu rounded-0 m-0">
-                                <a asp-controller="Home" asp-action="Testimonial" class="dropdown-item">Testimonios</a>
-                                <a asp-controller="Home" asp-action="Error404" class="dropdown-item">Error 404</a>
-                            </div>
-                        </div>
-                        <a asp-controller="Home" asp-action="Contacto" class="nav-item nav-link">Contacto</a>
                     </div>
-                    <a href="" class="btn btn-primary px-3 d-none d-lg-flex">Agregar Propiedad</a>
                 </div>
+                    <a href="" class="btn btn-primary px-3 d-none d-lg-flex">Agregar Propiedad</a>
             </nav>
         </div>
+    </div>
         <!-- Navbar End -->
         <!-- Header Start -->
         <div class="container-fluid header bg-white p-0">
@@ -147,10 +142,10 @@
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3">Tipo de Propiedades</h1>
+                <h1 class="display-5 animated fadeIn mb-4">Tipo De <span class="text-primary">  Propiedades</span></h1>
                     <p>En Zurex entendemos que cada cliente tiene necesidades y sueños únicos. Por eso, ofrecemos una amplia variedad de propiedades para cubrir todos los gustos y estilos de vida. Ya sea que busques tu primer hogar, una propiedad de inversión o una nueva ubicación para tu negocio, tenemos opciones para ti.</p>
                 </div>
-                <!-- Icon 1-->
+                    <!-- Icon 1-->
                 <div class="row g-4">
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
                         <a class="cat-item d-block bg-light text-center rounded p-3" href="">
@@ -158,84 +153,40 @@
                                 <div class="icon mb-3">
                                     <img class="img-fluid" src="img\iconos\icon-apartment.png" alt="Icon">
                                 </div>
-                                <h6>Apartamentos</h6>
+                                <h6>Departamentos</h6>
                             </div>
                         </a>
                     </div>
                     <!-- Icon 2 -->
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
-                            <div class="rounded p-4">
-                                <div class="icon mb-3">
-                                    <img class="img-fluid" src="img\iconos\icon-villa.png" alt="Icon">
-                                </div>
-                                    <h6>Villas</h6>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- Icon 3 -->
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
                         <a class="cat-item d-block bg-light text-center rounded p-3" href="">
                             <div class="rounded p-4">
                                 <div class="icon mb-3">
                                     <img class="img-fluid" src="img\iconos\icon-house.png" alt="Icon">
                                 </div>
-                                    <h6>Casas</h6>
+                                <h6>Casas</h6>
                             </div>
                         </a>
                     </div>
-                    <!-- Icon 4 -->
+                    <!-- Icon 3 -->
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
                         <a class="cat-item d-block bg-light text-center rounded p-3" href="">
                             <div class="rounded p-4">
                                 <div class="icon mb-3">
                                     <img class="img-fluid" src="img\iconos\icon-housing.png" alt="Icon">
                                 </div>
-                                    <h6>Oficinas</h6>
+                                <h6>Oficinas</h6>
                             </div>
                         </a>
                     </div>
-                    <!-- Icon 5 -->
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
-                            <div class="rounded p-4">
-                                <div class="icon mb-3">
-                                    <img class="img-fluid" src="img\iconos\icon-building.png" alt="Icon">
-                                </div>
-                                    <h6>Edificios</h6>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- Icon 6 -->
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
-                            <div class="rounded p-4">
-                                <div class="icon mb-3">
-                                    <img class="img-fluid" src="img\iconos\icon-neighborhood.png" alt="Icon">
-                                </div>
-                                    <h6>Residencias</h6>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- Icon 7 -->
+                    <!-- Icon 4 -->
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
                         <a class="cat-item d-block bg-light text-center rounded p-3" href="">
                             <div class="rounded p-4">
                                 <div class="icon mb-3">
                                     <img class="img-fluid" src="img\iconos\icon-condominium.png" alt="Icon">
                                 </div>
-                                    <h6>Negocios</h6>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- Icon 8 -->
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
-                            <div class="rounded p-4">
-                                <div class="icon mb-3">
-                                    <img class="img-fluid" src="img\iconos\icon-luxury.png" alt="Icon">
-                                </div>
-                                    <h6>Garage</h6>
+                                <h6>Negocios</h6>
                             </div>
                         </a>
                     </div>
@@ -253,7 +204,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                        <h1 class="mb-4">Elige El lugar Perfecto Para Tu Familia</h1>
+                    <h1 class="display-5 animated fadeIn mb-4">Elige <span class="text-primary"> El Lugar Perfecto </span> Para Tu Familia</h1>
                         <p class="mb-4">Sabemos que elegir un hogar no es solo una decisión financiera, sino también emocional. En Zurex entendemos la importancia de encontrar un lugar que se adapte a las necesidades y sueños de tu familia. Cada miembro merece sentirse cómodo, seguro y feliz en su entorno.</p>
                         <p><i class="fa fa-check text-primary me-3"></i>Te ofrecemos una amplia gama de propiedades en zonas estratégicas, pensadas para ofrecerte la mejor calidad de vida.</p>
                         <p><i class="fa fa-check text-primary me-3"></i>La seguridad, comodidad y accesibilidad son nuestras prioridades. </p>
@@ -270,7 +221,7 @@
                 <div class="row g-0 gx-5 align-items-end">
                     <div class="col-lg-6">
                         <div class="text-start mx-auto mb-5 wow slideInLeft" data-wow-delay="0.1s">
-                            <h1 class="mb-3">Lista De Propiedades</h1>
+                        <h1 class="display-5 animated fadeIn mb-4">Lista De <span class="text-primary"> Propiedades</span></h1>
                             <p>Cada propiedad en nuestra lista ha sido cuidadosamente seleccionada para garantizar calidad, comodidad y seguridad. Ya sea que busques un apartamento moderno en el centro de la ciudad, una casa familiar en una zona tranquila, o una propiedad de inversión con alto potencial, tenemos la opción perfecta para ti.</p>
                         </div>
                     </div>
@@ -409,138 +360,13 @@
                                 </div>
                             </div>
                             <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
-                                <a class="btn btn-primary py-3 px-5" href="">Mas Propiedades</a>
+                            <a class="btn btn-primary py-3 px-5" href="">Mas Propiedades</a> <!-- Se puede poner link para lista de propiedades-->
                             </div>
                         </div>
                     </div>
-                    <!-- House 7-->
-                    <div id="tab-2" class="tab-pane fade show p-0">
-                        <div class="row g-4">
-                            <div class="col-lg-4 col-md-6">
-                                <div class="property-item rounded overflow-hidden">
-                                    <div class="position-relative overflow-hidden">
-                                        <a href=""><img class="img-fluid" src="img\casas\casa-7.jpg" alt=""></a>
-                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">En Venta</div>
-                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Departamento</div>
-                                    </div>
-                                    <div class="p-4 pb-0">
-                                        <h5 class="text-primary mb-3">$1,136.000</h5>
-                                        <a class="d-block h5 mb-2" href="">SAN JUAN DE ARAGON #439</a>
-                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Calz.San Juan de Aragon #439,Colonia DM.Nacional,Alcaldía Gustavo A. Madero,CDMX.</p>
-                                    </div>
-                                    <div class="d-flex border-top">
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>62 m2</small>
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>2 Recamaras</small>
-                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>1 Baño</small>
-                                    </div>
-                                </div>
-                            </div>
-                                   <!-- House 8-->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="property-item rounded overflow-hidden">
-                                    <div class="position-relative overflow-hidden">
-                                        <a href=""><img class="img-fluid" src="img\casas\casa-8.jpg" alt=""></a>
-                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">En Venta</div>
-                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Departamento</div>
-                                    </div>
-                                    <div class="p-4 pb-0">
-                                        <h5 class="text-primary mb-3">$1,010.000</h5>
-                                        <a class="d-block h5 mb-2" href="">CALZ.TLALPAN #572</a>
-                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Calz.Tlalpan #572,Colonia Moderna,Alcaldía Benito Juarez,CDMX.</p>
-                                    </div>
-                                    <div class="d-flex border-top">
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>88 m2</small>
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>2 Recamaras</small>
-                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>2 Baños</small>
-                                    </div>
-                                </div>
-                            </div>
-                                   <!-- House 9-->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="property-item rounded overflow-hidden">
-                                    <div class="position-relative overflow-hidden">
-                                        <a href=""><img class="img-fluid" src="img\casas\casa-9.jpg" alt=""></a>
-                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">En Venta</div>
-                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Departamento</div>
-                                    </div>
-                                    <div class="p-4 pb-0">
-                                        <h5 class="text-primary mb-3">$1,165.000</h5>
-                                        <a class="d-block h5 mb-2" href="">CAMINO REAL A XOCHIPETEC #3</a>
-                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Camino Real a Xochipetec #3 Int.26,Col.Ampliación Tepepan,Alcaldía Xochimilco.</p>
-                                    </div>
-                                    <div class="d-flex border-top">
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>140 m2</small>
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>3 Recamaras</small>
-                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>1 1/2 Baños</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- House 10-->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="property-item rounded overflow-hidden">
-                                    <div class="position-relative overflow-hidden">
-                                        <a href=""><img class="img-fluid" src="img\casas\casa-10.jpg" alt=""></a>
-                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">En Venta</div>
-                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Departamento</div>
-                                    </div>
-                                    <div class="p-4 pb-0">
-                                        <h5 class="text-primary mb-3">$745,000</h5>
-                                        <a class="d-block h5 mb-2" href="">CUAUTLA #20</a>
-                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Cuautla #20 Depto.1,Col.Santa Ursula,Alcaldía Tlalpan.</p>
-                                    </div>
-                                    <div class="d-flex border-top">
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>90 m2</small>
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>2 Recamaras</small>
-                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>1 Baño</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- House 11-->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="property-item rounded overflow-hidden">
-                                    <div class="position-relative overflow-hidden">
-                                        <a href=""><img class="img-fluid" src="img\casas\casa-11.jpg" alt=""></a>
-                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">En Venta</div>
-                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Departamento</div>
-                                    </div>
-                                    <div class="p-4 pb-0">
-                                        <h5 class="text-primary mb-3">$714,000.</h5>
-                                        <a class="d-block h5 mb-2" href="">JOSE MARIA PARRA #274</a>
-                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Jose Maria Parra #274,Col.Juan Escutía.Alcaldía Iztapalapa,CDMX.</p>
-                                    </div>
-                                    <div class="d-flex border-top">
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>85 m2</small>
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>2 Recamaras</small>
-                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>1 Baño</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- House 12-->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="property-item rounded overflow-hidden">
-                                    <div class="position-relative overflow-hidden">
-                                        <a href=""><img class="img-fluid" src="img\casas\casa-12.jpg" alt=""></a>
-                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">En Venta</div>
-                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Departamento</div>
-                                    </div>
-                                    <div class="p-4 pb-0">
-                                        <h5 class="text-primary mb-3">$727,000.</h5>
-                                        <a class="d-block h5 mb-2" href="">REAL DE BOLEO #62</a>
-                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Real de Boledo #62 Int.516,Felipe Pescador,Alcaldía Cuauthémoc.</p>
-                                    </div>
-                                    <div class="d-flex border-top">
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>60 m2</small>
-                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>2 Recamaras</small>
-                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>1 Baño</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 text-center">
-                                <a class="btn btn-primary py-3 px-5" href="">Mas Propiedades</a>
-                            </div>
+                        <div class="col-12 text-center">
+                            <a class="btn btn-primary py-3 px-5" href="">Mas Propiedades</a>
                         </div>
-                    </div>
-
                 </div>
             </div>
         </div>
@@ -556,7 +382,7 @@
                             </div>
                             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                                 <div class="mb-4">
-                                    <h1 class="mb-3">Contacta Con Nuestros Agentes Certificados</h1>
+                                <h1 class="display-5 animated fadeIn mb-4">Contacta <span class="text-primary"> Con Nuestros </span> Agentes Certificados</h1>
                                     <p>
                                         En Zurex nos enorgullece ofrecer un servicio transparente y de calidad. Para garantizar la confianza en cada una de nuestras transacciones, contamos con un grupo de clientes certificados que han experimentado nuestros servicios de manera satisfactoria.
                                         Estos clientes no solo han adquirido propiedades a través de nuestra agencia, sino que también han validado nuestra profesionalidad, compromiso y atención al detalle.
@@ -575,7 +401,7 @@
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3">Nuestros Agentes</h1>
+                <h1 class="display-5 animated fadeIn mb-4">Nuestros <span class="text-primary"> Agentes</span></h1>
                     <p>Confía en nuestros agentes certificados para guiarte en cada paso de tu proceso inmobiliario. Con experiencia y dedicación, te ofrecen asesoría personalizada para ayudarte a encontrar la propiedad perfecta o a vender con éxito. En Zurex nuestro compromiso es tu tranquilidad.</p>
                 </div>
                 <div class="row g-4">
@@ -651,20 +477,20 @@
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3"> Opinión De Nuestros Clientes!</h1>
+                <h1 class="display-5 animated fadeIn mb-4">Opinión De <span class="text-primary"> Nuestros Clientes </span></h1>
                     <p>En Zurex nos enorgullece ofrecer un servicio de calidad, transparente y personalizado a cada uno de nuestros clientes. Creemos que la mejor manera de seguir mejorando es escuchar directamente de quienes confían en nosotros. Por eso, en esta sección queremos compartir las experiencias y opiniones de aquellos que han encontrado su hogar ideal gracias a nuestro acompañamiento.</p>
                 </div>
                 <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
                     <div class="testimonial-item bg-light rounded p-3">
                         <div class="bg-white border rounded p-4">
                             <p>
-                                "Excelente experiencia desde el principio. Los agentes de [Nombre de la Empresa] fueron muy atentos y respondieron a todas mis preguntas. Gracias a ellos encontré el hogar perfecto para mi familia.".
+                                "Excelente experiencia desde el principio. Los agentes de <strong>Zurex</strong> fueron muy atentos y respondieron a todas mis preguntas. Gracias a ellos encontré el hogar perfecto para mi familia.".
                             </p>
                             <div class="d-flex align-items-center">
                                 <img class="img-fluid flex-shrink-0 rounded" src="img\testimonial\testimonial-1.jpg" style="width: 45px; height: 45px;">
                                 <div class="ps-3">
                                     <h6 class="fw-bold mb-1">-Ana G.</h6>
-                                    <small>Profesión</small>
+                                    <small>Profesora</small>
                                 </div>
                             </div>
                         </div>
@@ -676,7 +502,7 @@
                                 <img class="img-fluid flex-shrink-0 rounded" src="img\testimonial\testimonial-2.jpg" style="width: 45px; height: 45px;">
                                 <div class="ps-3">
                                     <h6 class="fw-bold mb-1">– Carlos M.</h6>
-                                    <small>Profesión</small>
+                                    <small>Programador</small>
                                 </div>
                             </div>
                         </div>
@@ -687,8 +513,8 @@
                             <div class="d-flex align-items-center">
                                 <img class="img-fluid flex-shrink-0 rounded" src="img\testimonial\testimonial-3.jpg" style="width: 45px; height: 45px;">
                                 <div class="ps-3">
-                                    <h6 class="fw-bold mb-1">– Lucía R.</h6>
-                                    <small>Profesión</small>
+                                <h6 class="fw-bold mb-1">-Jose f.</h6>
+                                    <small>Dentista</small>
                                 </div>
                             </div>
                         </div>
@@ -701,11 +527,12 @@
         <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="container py-5">
                 <div class="row g-5">
+                <!-- CONTACT SECTION-->
                     <div class="col-lg-3 col-md-6">
                         <h5 class="text-white mb-4">Contáctanos</h5>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Av. Magdalena 434 int 202, Colonia Del Valle, Benito Juárez, 03100 Ciudad de México</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+525571499375</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>alexfigueroahernandez@gmail.com</p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -713,6 +540,7 @@
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
+                <!-- LINK SECTION-->
                     <div class="col-lg-3 col-md-6">
                         <h5 class="text-white mb-4">Links</h5>
                         <a class="btn btn-link text-white-50" href="">Nosotros</a>
@@ -721,6 +549,7 @@
                         <a class="btn btn-link text-white-50" href="">Privacidad y Políticas</a>
                         <a class="btn btn-link text-white-50" href="">Términos y Condiciones</a>
                     </div>
+                <!-- GALLERY SECTION-->
                     <div class="col-lg-3 col-md-6">
                         <h5 class="text-white mb-4">Galería</h5>
                         <div class="row g-2 pt-2">
@@ -744,9 +573,10 @@
                             </div>
                         </div>
                     </div>
+                <!-- E-MAIL SECTION-->
                     <div class="col-lg-3 col-md-6">
-                        <h5 class="text-white mb-4">Noticias</h5>
-                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <h5 class="text-white mb-4">Contáctanos</h5>
+                    <p>contáctanos por este medio.</p>
                         <div class="position-relative mx-auto" style="max-width: 400px;">
                             <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="e-mail">
                             <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Ingresa Aqui</button>
@@ -758,16 +588,13 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
-
-                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                            Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                            &copy; <a class="border-bottom" href="#">zurexinmobi.com.mx</a>, All Right Reserved.
                         </div>
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
-                                <a href="">Home</a>
+                                <a href="">Inicio</a>
                                 <a href="">Cookies</a>
-                                <a href="">Help</a>
+                                <a href="">Ayuda</a>
                                 <a href="">FQAs</a>
                             </div>
                         </div>
@@ -776,7 +603,7 @@
             </div>
         </div>
         <!-- Footer End -->
-    </div>
+  
 
     <!-- Float Button WhatsApp  -->
     <a href="https://wa.me/+527201509525?text=Hola, necesito más información."

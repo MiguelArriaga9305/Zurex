@@ -60,25 +60,18 @@
                     <div class="navbar-nav ms-auto">
                         <a class="nav-item nav-link" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
                         <a asp-controller="Home" asp-action="About" class="nav-item nav-link">Nosotros</a>
+                        <a asp-controller="Home" asp-action="Testimonial" class="nav-item nav-link">Testimonios</a>
+                        <a asp-controller="Home" asp-action="Contact" class="nav-item nav-link">Contacto</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Propiedades</a>
                             <div class="dropdown-menu rounded-0 m-0">
                                 <a asp-controller="Home" asp-action="PropertyAgent" class="dropdown-item">Agentes de propiedades</a>
                                 <a asp-controller="Home" asp-action="PropertyList" class="dropdown-item">Lista de propiedades</a>
-                                <a asp-controller="Home" asp-action="PropertyType" class="dropdown-item">Tipo de Propiedad</a>
-                            </div>
-                            <div class="dropdown-menu rounded-0 m-0"></div>
-                        </div>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Paginas</a>
-                            <div class="dropdown-menu rounded-0 m-0">
-                                <a asp-controller="Home" asp-action="Testimonial" class="dropdown-item">Testimonial</a>
-                                <a asp-controller="Home" asp-action="Error404" class="dropdown-item">404 Error</a>
+                                <a asp-controller="Home" asp-action="PropertyType" class="dropdown-item">Tipo de Propiedades</a>
                             </div>
                         </div>
-                        <a asp-controller="Home" asp-action="Contact" class="nav-item nav-link">Contacto</a>
                     </div>
-                    <a href="" class="btn btn-primary px-3 d-none d-lg-flex">Agregar Propiedad</a>
+                        <a href="" class="btn btn-primary px-3 d-none d-lg-flex">Agregar Propiedad</a>
                 </div>
             </nav>
         </div>
@@ -87,7 +80,8 @@
         <div class="container-fluid header bg-white p-0">
             <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
                 <div class="col-md-6 p-5 mt-lg-5">
-                    <h1 class="display-5 animated fadeIn mb-4">Tipo de Propiedad</h1>
+                    <h1 class="display-5 animated fadeIn mb-4">Tipos <span class="text-primary"> de </span> Propiedades</h1>
+                    <p>En <strong>Zurex</strong>, te ofrecemos una variedad de propiedades que se ajustan a tus necesidades y estilo de vida. Ya sea que busques tu hogar ideal, una inversión rentable o un espacio comercial, contamos con opciones para cada preferencia. Explora nuestros tipos de propiedades y encuentra la que mejor se adapte a ti. ¡Estamos aquí para ayudarte a tomar la mejor decisión!</p>
                     <nav aria-label="breadcrumb animated fadeIn">
                         <ol class="breadcrumb text-uppercase"></ol>
                     </nav>
@@ -136,8 +130,8 @@
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3">Tipo de Propiedades</h1>
-                    <p>En Zurex entendemos que cada cliente tiene necesidades y sueños únicos. Por eso, ofrecemos una amplia variedad de propiedades para cubrir todos los gustos y estilos de vida. Ya sea que busques tu primer hogar, una propiedad de inversión o una nueva ubicación para tu negocio, tenemos opciones para ti.</p>
+                    <h1 class="display-5 animated fadeIn mb-4">Nuestras <span class="text-primary"> Propiedades</span></h1>
+                    <p>En<strong>Zurex</strong>entendemos que cada cliente tiene necesidades y sueños únicos. Por eso, ofrecemos una amplia variedad de propiedades para cubrir todos los gustos y estilos de vida. Ya sea que busques tu primer hogar, una propiedad de inversión o una nueva ubicación para tu negocio, tenemos opciones para ti.</p>
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -146,18 +140,7 @@
                                 <div class="icon mb-3">
                                     <img class="img-fluid" src="../img/iconos/icon-apartment.png" alt="Icon">
                                 </div>
-                                <h6>Apartamentos</h6>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
-                            <div class="rounded p-4">
-                                <div class="icon mb-3">
-                                    <img class="img-fluid" src="../img/iconos/icon-villa.png" alt="Icon">
-                                </div>
-                                <h6>Villas</h6>
-                                <
+                                <h6>Departamentos</h6>
                             </div>
                         </a>
                     </div>
@@ -168,7 +151,6 @@
                                     <img class="img-fluid" src="../img/iconos/icon-house.png" alt="Icon">
                                 </div>
                                 <h6>Casas</h6>
-                                
                             </div>
                         </a>
                     </div>
@@ -176,54 +158,10 @@
                         <a class="cat-item d-block bg-light text-center rounded p-3" href="">
                             <div class="rounded p-4">
                                 <div class="icon mb-3">
-                                    <img class="img-fluid" src="../img/iconos/icon-housing.png" alt="Icon">
+                                    <img class="img-fluid" src="../img/testimonial/icon-housing.png" alt="Icon">
                                 </div>
                                 <h6>Oficinas</h6>
                                
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
-                            <div class="rounded p-4">
-                                <div class="icon mb-3">
-                                    <img class="img-fluid" src="../img/iconos/icon-building.png" alt="Icon">
-                                </div>
-                                <h6>Edificios</h6>
-                               
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
-                            <div class="rounded p-4">
-                                <div class="icon mb-3">
-                                    <img class="img-fluid" src="../img/iconos/icon-neighborhood.png" alt="Icon">
-                                </div>
-                                <h6>Residencias</h6>
-                                
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
-                            <div class="rounded p-4">
-                                <div class="icon mb-3">
-                                    <img class="img-fluid" src="../img/iconos/icon-condominium.png" alt="Icon">
-                                </div>
-                                <h6>Negocios</h6>
-                                
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
-                            <div class="rounded p-4">
-                                <div class="icon mb-3">
-                                    <img class="img-fluid" src="../img/iconos/icon-luxury.png" alt="Icon">
-                                </div>
-                                <h6>Garage</h6>
-                                
                             </div>
                         </a>
                     </div>
@@ -235,11 +173,12 @@
         <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="container py-5">
                 <div class="row g-5">
+                <!-- CONTACT SECTION-->
                     <div class="col-lg-3 col-md-6">
-                        <h5 class="text-white mb-4">Get In Touch</h5>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <h5 class="text-white mb-4">Contáctanos</h5>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Av. Magdalena 434 int 202, Colonia Del Valle, Benito Juárez, 03100 Ciudad de México</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+525571499375</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>alexfigueroahernandez@gmail.com</p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -247,16 +186,18 @@
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
+                    <!-- LINK SECTION-->
                     <div class="col-lg-3 col-md-6">
-                        <h5 class="text-white mb-4">Quick Links</h5>
+                        <h5 class="text-white mb-4">Links</h5>
                         <a class="btn btn-link text-white-50" href="">Nosotros</a>
                         <a class="btn btn-link text-white-50" href="">Contáctanos</a>
                         <a class="btn btn-link text-white-50" href="">Propiedades</a>
                         <a class="btn btn-link text-white-50" href="">Privacidad y Políticas</a>
                         <a class="btn btn-link text-white-50" href="">Términos y Condiciones</a>
                     </div>
+                    <!-- GALLERY SECTION-->
                     <div class="col-lg-3 col-md-6">
-                        <h5 class="text-white mb-4">Photo Gallery</h5>
+                        <h5 class="text-white mb-4">Galería</h5>
                         <div class="row g-2 pt-2">
                             <div class="col-4">
                                 <img class="img-fluid rounded bg-light p-1" src="../img/casas/casa-12.jpg" alt="">
@@ -278,9 +219,10 @@
                             </div>
                         </div>
                     </div>
+                    <!-- E-MAIL SECTION-->
                     <div class="col-lg-3 col-md-6">
-                        <h5 class="text-white mb-4">Newsletter</h5>
-                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                        <h5 class="text-white mb-4">Contáctanos</h5>
+                        <p>contáctanos por este medio.</p>
                         <div class="position-relative mx-auto" style="max-width: 400px;">
                             <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="e-mail">
                             <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Ingresa Aqui</button>
@@ -292,16 +234,16 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
+                            &copy; <a class="border-bottom" href="#">zurexinmobi.com.mx</a>, All Right Reserved.
 
                             <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                             Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
                         </div>
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
-                                <a href="">Home</a>
+                                <a href="">Inicio</a>
                                 <a href="">Cookies</a>
-                                <a href="">Help</a>
+                                <a href="">Ayuda</a>
                                 <a href="">FQAs</a>
                             </div>
                         </div>

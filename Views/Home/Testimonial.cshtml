@@ -60,31 +60,29 @@
                     <div class="navbar-nav ms-auto">
                         <a class="nav-item nav-link" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
                         <a asp-controller="Home" asp-action="About" class="nav-item nav-link">Nosotros</a>
+                        <a asp-controller="Home" asp-action="Testimonial" class="nav-item nav-link">Testimonios</a>
+                        <a asp-controller="Home" asp-action="Contact" class="nav-item nav-link">Contacto</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Propiedades</a>
-                            <div class="dropdown-menu rounded-0 m-0"></div>
-                        </div>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Paginas</a>
                             <div class="dropdown-menu rounded-0 m-0">
-                                <a asp-controller="Home" asp-action="Testimonial" class="dropdown-item">Testimonios</a>
-                                <a asp-controller="Home" asp-action="Error404" class="dropdown-item">Error 404</a>
+                                <a asp-controller="Home" asp-action="PropertyAgent" class="dropdown-item">Agentes de propiedades</a>
+                                <a asp-controller="Home" asp-action="PropertyList" class="dropdown-item">Lista de propiedades</a>
+                                <a asp-controller="Home" asp-action="PropertyType" class="dropdown-item">Tipo de Propiedad</a>
                             </div>
                         </div>
-                        <a asp-controller="Home" asp-action="Contact" class="nav-item nav-link">Contacto</a>
                     </div>
-                        
-                    </div>
-                <a href="" class="btn btn-primary px-3 d-none d-lg-flex">Agregar Propiedad</a>
                 </div>
+                <a href="" class="btn btn-primary px-3 d-none d-lg-flex">Agregar Propiedad</a>
             </nav>
         </div>
+    </div>
         <!-- Navbar End -->
         <!-- Header Start -->
         <div class="container-fluid header bg-white p-0">
             <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
                 <div class="col-md-6 p-5 mt-lg-5">
-                    <h1 class="display-5 animated fadeIn mb-4">Testimonial</h1>
+                <h1 class="display-5 animated fadeIn mb-4">Nuestros <span class="text-primary"> Testimonios</span></h1>
+                    <p>En <strong>Zurex</strong>, nos llena de orgullo escuchar las experiencias y opiniones de nuestros clientes. Cada testimonio es una prueba de nuestro compromiso con la excelencia y la satisfacción. Nos esforzamos por brindar un servicio que no solo cumpla, sino que supere las expectativas, y es a través de sus palabras que seguimos mejorando día a día. ¡Gracias por confiar en nosotros!</p>
                     <nav aria-label="breadcrumb animated fadeIn">
                         <ol class="breadcrumb text-uppercase"></ol>
                     </nav>
@@ -109,7 +107,6 @@
                                 <option selected>Tipo de Propiedad</option>
                                 <option value="1">Departamentos</option>
                                 <option value="2">Casas</option>
-                                <option value="3">Oficinas</option>
                                 </select>
                             </div>
                             <div class="col-md-4">
@@ -133,42 +130,42 @@
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3">Our Clients Say!</h1>
-                    <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+                <h1 class="display-5 animated fadeIn mb-4">Opinión <span class="text-primary"> de nuestros </span> clientes</h1>
+                <p>Aquí compartimos algunas experiencias y comentarios de nuestros clientes. Sus palabras son un reflejo de nuestro esfuerzo por ofrecer un servicio de calidad y cumplir con sus expectativas. ¡Gracias por confiar en nosotros!</p>
                 </div>
                 <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
                     <div class="testimonial-item bg-light rounded p-3">
                         <div class="bg-white border rounded p-4">
-                            <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd erat eos</p>
+                        <p>"Excelente experiencia desde el principio. Los agentes de <strong>Zurex</strong> fueron muy atentos y respondieron a todas mis preguntas. Gracias a ellos encontré el hogar perfecto para mi familia.".</p>
                             <div class="d-flex align-items-center">
-                                <img class="img-fluid flex-shrink-0 rounded" src="../img/testimonial-1.jpg" style="width: 45px; height: 45px;">
+                            <img class="img-fluid flex-shrink-0 rounded" src=" ../img/testimonial/testimonial-1.jpg" style="width: 45px; height: 45px;">
                                 <div class="ps-3">
-                                    <h6 class="fw-bold mb-1">Client Name</h6>
-                                    <small>Profession</small>
+                                <h6 class="fw-bold mb-1">-Ana G.</h6>
+                                    <small>Profesora</small>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="testimonial-item bg-light rounded p-3">
                         <div class="bg-white border rounded p-4">
-                            <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd erat eos</p>
+                        <p>"Profesionalismo y atención al detalle. Me acompañaron en cada paso y siempre sentí que mis intereses estaban en buenas manos. Definitivamente los recomendaría a cualquiera."</p>
                             <div class="d-flex align-items-center">
-                                <img class="img-fluid flex-shrink-0 rounded" src="../img/testimonial-2.jpg" style="width: 45px; height: 45px;">
+                            <img class="img-fluid flex-shrink-0 rounded" src=" ../img/testimonial/testimonial-2.jpg" style="width: 45px; height: 45px;">
                                 <div class="ps-3">
-                                    <h6 class="fw-bold mb-1">Client Name</h6>
-                                    <small>Profession</small>
+                                <h6 class="fw-bold mb-1">– Carlos M.</h6>
+                                    <small>Programador</small>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="testimonial-item bg-light rounded p-3">
                         <div class="bg-white border rounded p-4">
-                            <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd erat eos</p>
+                        <p>"El equipo de Zurex superó mis expectativas. Su conocimiento del mercado y su habilidad para entender lo que estaba buscando hicieron que el proceso fuera rápido y sin complicaciones."</p>
                             <div class="d-flex align-items-center">
-                                <img class="img-fluid flex-shrink-0 rounded" src="../img/testimonial-3.jpg" style="width: 45px; height: 45px;">
+                            <img class="img-fluid flex-shrink-0 rounded" src=" ../img/testimonial/testimonial-3.jpg" style="width: 45px; height: 45px;">
                                 <div class="ps-3">
-                                    <h6 class="fw-bold mb-1">Client Name</h6>
-                                    <small>Profession</small>
+                                    <h6 class="fw-bold mb-1">-Jose f.</h6>
+                                    <small>Dentista</small>
                                 </div>
                             </div>
                         </div>
@@ -181,11 +178,12 @@
         <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="container py-5">
                 <div class="row g-5">
+                    <!-- CONTACT SECTION-->
                     <div class="col-lg-3 col-md-6">
-                        <h5 class="text-white mb-4">Get In Touch</h5>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <h5 class="text-white mb-4">Contáctanos</h5>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Av. Magdalena 434 int 202, Colonia Del Valle, Benito Juárez, 03100 Ciudad de México</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+5255714993750</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>alexfigueroahernandez@gmail.com</p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -193,16 +191,18 @@
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
+                <!-- LINK SECTION-->
                     <div class="col-lg-3 col-md-6">
-                        <h5 class="text-white mb-4">Quick Links</h5>
+                    <h5 class="text-white mb-4">Links</h5>
                     <a class="btn btn-link text-white-50" href="">Nosotros</a>
                     <a class="btn btn-link text-white-50" href="">Contáctanos</a>
                     <a class="btn btn-link text-white-50" href="">Propiedades</a>
                     <a class="btn btn-link text-white-50" href="">Privacidad y Políticas</a>
                     <a class="btn btn-link text-white-50" href="">Términos y Condiciones</a>
                     </div>
+                <!-- GALLERY SECTION-->
                     <div class="col-lg-3 col-md-6">
-                        <h5 class="text-white mb-4">Photo Gallery</h5>
+                        <h5 class="text-white mb-4">Galería</h5>
                         <div class="row g-2 pt-2">
                             <div class="col-4">
                             <img class="img-fluid rounded bg-light p-1" src="../img/casas/casa-12.jpg" alt="">
@@ -224,12 +224,13 @@
                             </div>
                         </div>
                     </div>
+                <!-- E-MAIL SECTION-->
                     <div class="col-lg-3 col-md-6">
-                        <h5 class="text-white mb-4">Newsletter</h5>
-                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <h5 class="text-white mb-4">Contáctanos</h5>
+                        <p>contáctanos por este medio.</p>
                         <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="e-mail">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Ingresa Aqui</button>
+                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="e-mail">
+                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Ingresa Aqui</button>
                         </div>
                     </div>
                 </div>
@@ -238,16 +239,16 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
+                        &copy; <a class="border-bottom" href="#">zurexinmobi.com.mx</a>, All Right Reserved.
 
                             <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                             Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
                         </div>
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
-                                <a href="">Home</a>
+                                <a href="">Inicio</a>
                                 <a href="">Cookies</a>
-                                <a href="">Help</a>
+                                <a href="">Ayuda</a>
                                 <a href="">FQAs</a>
                             </div>
                         </div>
@@ -258,7 +259,7 @@
         <!-- Footer End -->
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-    </div>
+ 
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
