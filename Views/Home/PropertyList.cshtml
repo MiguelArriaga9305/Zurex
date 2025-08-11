@@ -45,40 +45,34 @@
         </div>
     </div>
         <!-- Spinner End -->
+    
         <!-- Navbar Start -->
-        <div class="container-fluid nav-bar bg-transparent">
-            <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
-                <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
-                    <div class="icon p-2 me-2">
-                        <img class="img-fluid" src="../img/iconos/logo de zurex.jpg" alt="Icon" style="width: 30px; height: 30px;">
-                    </div>
-                    <h1 class="m-0 text-primary">Zurex</h1>
-                </a>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto">
-                        <a class="nav-item nav-link" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
-                        <a asp-controller="Home" asp-action="About" class="nav-item nav-link">Nosotros</a>
-                        <a asp-controller="Home" asp-action="Testimonial" class="nav-item nav-link">Testimonios</a>
-                        <a asp-controller="Home" asp-action="Contact" class="nav-item nav-link">Contacto</a>
-                          <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Propiedades</a>
-                                <div class="dropdown-menu rounded-0 m-0">
-                                    <a asp-controller="Home" asp-action="PropertyAgent" class="dropdown-item">Agentes de propiedades</a>
-                                    <a asp-controller="Home" asp-action="PropertyList" class="dropdown-item">Lista de propiedades</a>
-                                    <a asp-controller="Home" asp-action="PropertyType" class="dropdown-item">Tipo de Propiedad</a>
-                                </div>
-                          </div>
-                    </div>
-                        <a href="" class="btn btn-primary px-3 d-none d-lg-flex">Agregar Propiedad</a>
+    <div class="container-fluid nav-bar bg-transparent">
+        <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
+            <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
+                <div class="icon p-2 me-2">
+                    <img class="img-fluid" src="../img/iconos/logo de zurex.jpg" alt="Icon" style="width: 30px; height: 30px;">
                 </div>
-            </nav>
-        </div>
-        <!-- Navbar End -->
-        <!-- Header Start -->
-        <div class="container-fluid header bg-white p-0">
+                <h1 class="m-0 text-primary">Zurex</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto">
+                    <a asp-controller="Home" asp-action="Index" class="nav-item nav-link active">Inicio</a>
+                    <a asp-controller="Home" asp-action="About" class="nav-item nav-link">Nosotros</a>
+                    <a asp-controller="Home" asp-action="Testimonial" class="nav-item nav-link">Testimonios</a>
+                    <a asp-controller="Home" asp-action="Contact" class="nav-item nav-link">Contacto</a>
+                    <a asp-controller="Home" asp-action="PropertyList" class="nav-item nav-link">Propiedades</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+       
+    <!-- Header Start -->
+        <div class="container-flu<a asp-controller="Home" asp-action="PropertyList" class="nav-item nav-link">
             <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
                 <div class="col-md-6 p-5 mt-lg-5">
                     <h1 class="display-5 animated fadeIn mb-4">Nuestras <span class="text-primary"> Propiedades</span></h1>
@@ -93,40 +87,30 @@
             </div>
         </div>
         <!-- Header End -->
+        
         <!-- Search Start -->
-        <div class="container-fluid bg-primary mb-5 wow fadeIn" data-wow-delay="0.1s" style="padding: 35px;">
-            <div class="container">
-                <div class="row g-2">
-                    <div class="col-md-10">
-                        <div class="row g-2">
-                            <div class="col-md-4">
-                                <input type="text" class="form-control border-0 py-3" placeholder="Palabra Clave">
-                            </div>
-                            <div class="col-md-4">
-                                <select class="form-select border-0 py-3">
-                                    <option selected>Tipo de Propiedad</option>
-                                    <option value="1">Departamentos</option>
-                                    <option value="2">Casas</option>
-                                    <option value="3">Oficinas</option>
-                                </select>
-                            </div>
-                            <div class="col-md-4">
-                                <select class="form-select border-0 py-3">
-                                    <option selected>Locación</option>
-                                    <option value="1">Locación 1</option>
-                                    <option value="2">Locación 2</option>
-                                    <option value="3">Locación 3</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <button class="btn btn-dark border-0 w-100 py-3">Buscar</button>
-                    </div>
+    <div class="container-fluid bg-primary mb-5 wow fadeIn" data-wow-delay="0.1s" style="padding: 35px;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 mb-3">
+                    <a asp-controller="Home" asp-action="PropertyList"
+                       class="form-select border-0 py-3 text-decoration-none d-block text-dark text-center"
+                       style="cursor: pointer;">
+                        Tipo de Propiedad
+                    </a>
+                </div>
+                <div class="col-md-5 mb-3">
+                    <a asp-controller="Home" asp-action="Contact"
+                       class="form-select border-0 py-3 text-decoration-none d-block text-dark text-center"
+                       style="cursor: pointer;">
+                        Ubicación
+                    </a>
                 </div>
             </div>
         </div>
+    </div>
         <!-- Search End -->
+        
         <!-- Property List Start -->
         <div class="container-xxl py-5">
             <div class="container">
@@ -437,8 +421,12 @@
                                     Estos clientes no solo han adquirido propiedades a través de nuestra agencia, sino que también han validado nuestra profesionalidad, compromiso y atención al detalle.
                                 </p>
                                 </div>
-                            <a href="" class="btn btn-primary py-3 px-4 me-2"><i class="fa fa-phone-alt me-2"></i>Contactanos</a>
-                            <a href="" class="btn btn-dark py-3 px-4"><i class="fa fa-calendar-alt me-2"></i>Agenda Una Cita</a>
+                                <a asp-controller="Home" asp-action="Contact" class="btn btn-primary py-3 px-4 me-2">
+                                    <i class="fa fa-phone-alt me-2"></i>Contactanos
+                                </a>
+                                <a asp-controller="Home" asp-action="Contact" class="btn btn-primary py-3 px-4 me-2">
+                                <i class="fa fa-phone-alt me-2"></i>Agenda una Cita
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -446,11 +434,13 @@
             </div>
         </div>
         <!-- Call to Action End -->
+        
         <!-- Footer Start -->
         <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="container py-5">
                 <div class="row g-5">
-                <!-- CONTACT SECTION-->
+               
+                    <!-- CONTACT SECTION-->
                     <div class="col-lg-3 col-md-6">
                     <h5 class="text-white mb-4">Contáctanos</h5>
                         <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Av. Magdalena 434 int 202, Colonia Del Valle, Benito Juárez, 03100 Ciudad de México</p>
@@ -463,7 +453,8 @@
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
-                <!-- LINK SECTION-->
+                
+                    <!-- LINK SECTION-->
                     <div class="col-lg-3 col-md-6">
                         <h5 class="text-white mb-4">Links</h5>
                         <a class="btn btn-link text-white-50" href="">Nosotros</a>
@@ -472,7 +463,8 @@
                         <a class="btn btn-link text-white-50" href="">Privacidad y Políticas</a>
                         <a class="btn btn-link text-white-50" href="">Términos y Condiciones</a>
                     </div>
-                <!-- GALLERY SECTION-->
+               
+                    <!-- GALLERY SECTION-->
                     <div class="col-lg-3 col-md-6">
                     <h5 class="text-white mb-4">Galería</h5>
                         <div class="row g-2 pt-2">
@@ -496,7 +488,8 @@
                             </div>
                         </div>
                     </div>
-                <!-- E-MAIL SECTION-->
+               
+                    <!-- E-MAIL SECTION-->
                     <div class="col-lg-3 col-md-6">
                     <h5 class="text-white mb-4">Contáctanos</h5>
                         <p>contáctanos por este medio.</p>
@@ -529,9 +522,17 @@
             </div>
         </div>
         <!-- Footer End -->
+       
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     
+        <!-- Float Button WhatsApp  -->
+    <a href="https://wa.me/+525571499375?text=Hola, necesito más información."
+       target="_blank"
+       class="whatsapp-float"
+       role="button">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 30px;">
+    </a>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

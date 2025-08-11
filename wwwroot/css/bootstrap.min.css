@@ -48,8 +48,8 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #666565;
-    background-color: adb2b9;
+    color: #2E2E2E;
+    background-color: #777777;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0,0,0,0)
 }
@@ -4264,9 +4264,8 @@ textarea.form-control-lg {
     color: #000;
 }
 
-    .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-        color: rgb(148, 26, 37);
-       
+    .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus .nav-link.active {
+        color: var(--darkreader-text-941a25, #e56c77);
     }
 
     .navbar-light .navbar-nav .nav-link.disabled {
@@ -7824,7 +7823,7 @@ textarea.form-control-lg {
 }
 
 .bg-white {
-    background-color: #dde2e5 !important
+    background-color: #BDBDBD !important
 }
 
 .bg-transparent {

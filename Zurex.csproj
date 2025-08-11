@@ -7,6 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="NewFolder1\**" />
+    <Content Remove="NewFolder1\**" />
+    <EmbeddedResource Remove="NewFolder1\**" />
+    <None Remove="NewFolder1\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\EmailController.cs" />
+    <Compile Remove="Services\EmailService.cs" />
     <Compile Remove="Views\Home\Contact.cs" />
   </ItemGroup>
 
@@ -144,6 +153,14 @@
     <None Include="wwwroot\scss\bootstrap\scss\_type.scss" />
     <None Include="wwwroot\scss\bootstrap\scss\_utilities.scss" />
     <None Include="wwwroot\scss\bootstrap\scss\_variables.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SendGrid" Version="9.29.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\" />
   </ItemGroup>
 
 </Project>

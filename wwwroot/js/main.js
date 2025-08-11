@@ -1,3 +1,5 @@
+console.log("main.js cargado");
+
 (function ($) {
     "use strict";
 
@@ -75,6 +77,27 @@
             }
         }
     });
-    
+
+    // Envío del formulario por WhatsApp
+    document.addEventListener('DOMContentLoaded', function () {
+        const form = document.getElementById('whatsappForm');
+        if (form) {
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const subject = document.getElementById('subject').value;
+                const message = document.getElementById('message').value;
+
+                const phone = "14694968722"; // Reemplaza con tu número (sin el +), por ejemplo: 5213312345678
+
+                const text = `Hola, soy ${name}.\nCorreo: ${email}\nAsunto: ${subject}\nMensaje: ${message}`;
+                const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+
+                window.open(url, '_blank');
+            });
+        }
+    });
 })(jQuery);
 
